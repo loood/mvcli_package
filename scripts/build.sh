@@ -9,6 +9,6 @@ cd mvcli-4.1.13.31_A01
 mkdir -p dst/lib dst/usr/bin
 install -m 644 x64/lib/libmvraid.so dst/lib/libmvraid.so
 install -m 755 x64/cli/mvcli dst/usr/bin/mvcli
-
-fpm -s dir -t deb -n mvcli -v 4.1.13.31-A01 -a amd64 -C dst lib usr/bin
+cp -r /deb_dist/debian/ debian/
+fpm -s dir -t deb -n mvcli -v 4.1.13.31-A01 -a amd64 --deb-custom-control debian/control -C dst lib usr/bin
 cp *.deb /deb_dist/

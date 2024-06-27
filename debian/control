@@ -1,0 +1,6 @@
+Package: mvcli
+Maintainer: loood <loood@github.com>
+Version: 4.1.13.31-A01
+Architecture: amd64
+Homepage: https://github.com/loood/mvcli_package
+Description: Marvell Disk Storage Utility
